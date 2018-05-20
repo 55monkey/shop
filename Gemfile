@@ -30,14 +30,6 @@ gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 
-
-gem 'image_magick', '~> 0.1.9'
-gem 'mini_magick', '~> 4.8'
-
-
-
-
-
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -65,6 +57,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-
-
