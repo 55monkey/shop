@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
+gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
+
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
