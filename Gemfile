@@ -68,3 +68,5 @@ end
 
 gem 'sprockets-helpers', '~> 1.2.1'
 gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 'master'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
