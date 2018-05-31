@@ -1,17 +1,13 @@
 <% @body_id = 'product-details' %>
 
-<%= render partial: 'spree/shared/trackers/segment/product_viewed.js',
-            formats: :js,
-            locals: { product: @product } %>
-
 <% cache cache_key_for_product do %>
   <div data-hook="product_show" class="row" itemscope itemtype="https://schema.org/Product">
     <div class="col-md-4 col-sm-5" data-hook="product_left_part">
       <div data-hook="product_left_part_wrap">
         <div id="product-images" data-hook="product_images">
-          <div id="main-image" class="panel panel-default" data-hook>
+          <div id="main-image" class="panel" data-hook>
             <div class="panel-body text-center">
-              <%= product_image(@product, itemprop: "image") %>
+              <%= large_image(@product, itemprop: "image", class: "img-responsive center-block") %>
             </div>
           </div>
           <div id="thumbnails" data-hook>
@@ -19,11 +15,11 @@
           </div>
         </div>
 
-        <div data-hook="product_properties">
+        <div data-hook="product_properties" class="hidden-xs">
           <%= render partial: 'properties' %>
         </div>
 
-        <div data-hook="promotions">
+        <div data-hook="promotions"  class="hidden-xs">
           <%= render partial: 'promotions' %>
         </div>
       </div>
@@ -41,6 +37,14 @@
           <div id="cart-form" data-hook="cart_form">
             <%= render partial: 'cart_form' %>
           </div>
+        </div>
+
+        <div data-hook="product_properties" class="hidden-lg hidden-md hidden-sm visible-xs">
+          <%= render partial: 'properties' %>
+        </div>
+
+        <div data-hook="promotions" class="hidden-lg hidden-md hidden-sm visible-xs">
+          <%= render partial: 'promotions' %>
         </div>
 
         <div id="taxon-crumbs" class=" five " data-hook="product_taxons">
