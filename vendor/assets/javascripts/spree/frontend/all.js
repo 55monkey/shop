@@ -14,3 +14,4 @@
 //= require spree/frontend/spree_themes
 //= require spree/frontend/spree_paypal_express
 //= require spree/frontend/spree_globalize
+//= require spree/frontend/spree_recently_viewed
